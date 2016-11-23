@@ -1,0 +1,13 @@
+
+<app-header></app-header>
+<h1>{{title}}</h1>
+<p>{{description}}</p>
+<input type="text" name="description" [(ngModel)]="description">
+<button (click)="clearData()"></button>
+
+<br>
+
+<a routerLink="/a" routerLinkActive="active">a</a>
+<a routerLink="/b" routerLinkActive="active">b</a>
+<a routerLink="/" routerLinkActive="active">subhome</a>
+<router-outlet></router-outlet>
