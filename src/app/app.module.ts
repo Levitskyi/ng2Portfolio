@@ -6,14 +6,12 @@ import { RouterModule } from '@angular/router';
 
 import { ROUTES } from './app.routes';
 
-import { AuthGuard, AuthService } from './auth';
-
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about';
 import { ArticleComponent } from './article';
 import { HeaderComponent } from './header';
 import { HomeComponent } from './home';
-import { LoginComponent } from './login';
+import { WorksComponent } from './works';
 
 @NgModule({
     imports: [
@@ -28,12 +26,9 @@ import { LoginComponent } from './login';
         ArticleComponent,
         HeaderComponent,
         HomeComponent,
-        LoginComponent
+        WorksComponent
     ],
-    providers: [
-        AuthGuard,
-        AuthService
-    ],
+    providers: [],
     bootstrap: [ AppComponent ]
 })
 
