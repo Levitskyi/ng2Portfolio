@@ -8,10 +8,10 @@ import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about';
-import { ArticleComponent } from './article';
 import { HeaderComponent } from './header';
 import { HomeComponent } from './home';
 import { WorksComponent } from './works';
+import { MainSliderComponent } from './main-slider';
 
 @NgModule({
     imports: [
@@ -23,10 +23,10 @@ import { WorksComponent } from './works';
     declarations: [
         AppComponent,
         AboutComponent,
-        ArticleComponent,
         HeaderComponent,
         HomeComponent,
-        WorksComponent
+        WorksComponent,
+        MainSliderComponent
     ],
     providers: [],
     bootstrap: [ AppComponent ]

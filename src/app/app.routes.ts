@@ -1,7 +1,8 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home';
 import { AboutComponent } from './about';
-import { ArticleComponent } from './article';
+import {WorksComponent} from './works';
+import {MainSliderComponent} from './main-slider';
 
 export const ROUTES: Routes = [
     {
@@ -11,19 +12,19 @@ export const ROUTES: Routes = [
             {
                 path: '',
                 children: [
-                    { path: 'a', component: AboutComponent },
-                    { path: '', component: AboutComponent }
+                    { path: 'works', component: WorksComponent },
+                    { path: 'main-slider', component: MainSliderComponent }
                 ],
             }
         ]
     },
     {
-        path: 'article/:id',
-        component: ArticleComponent
-    },
-    {
         path: 'about',
         component: AboutComponent
+    },
+    {
+        path: 'works/:id',
+        component: WorksComponent
     },
     {
         path: '**',

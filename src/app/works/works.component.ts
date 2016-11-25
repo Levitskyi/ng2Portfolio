@@ -15,7 +15,11 @@ export const HEROES = [
 
 @Component({
     selector: 'works',
-    template: '<h1>Works</h1>'
+    template: `
+<app-header></app-header>
+<h1>Works</h1>
+<a [routerLink]=" ['./works', 2] " routerLinkActive="active">1asdasdasdasd</a>
+`
 })
 
 export class WorksComponent {
