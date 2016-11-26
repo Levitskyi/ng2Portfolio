@@ -16,6 +16,7 @@ export class HomeComponent {
 
     clearData() {
         this.description = '';
+        console.log('test');
     }
 
     ngOnInit() {
