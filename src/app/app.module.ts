@@ -12,6 +12,14 @@ import { HeaderComponent } from './header';
 import { HomeComponent } from './home';
 import { WorksComponent } from './works';
 import { MainSliderComponent } from './main-slider';
+import { SkillsComponent } from './skills';
+import { ExperienceComponent } from './experience';
+import { EducationComponent } from './education';
+import { TechnologiesComponent } from './technologies';
+import { FeedbackComponent } from './feedback';
+import { BlogComponent } from './blog';
+import { InterestComponent } from './interest';
+import { ContactComponent } from './contact';
 
 @NgModule({
     imports: [
@@ -26,7 +34,15 @@ import { MainSliderComponent } from './main-slider';
         HeaderComponent,
         HomeComponent,
         WorksComponent,
-        MainSliderComponent
+        MainSliderComponent,
+        SkillsComponent,
+        ExperienceComponent,
+        EducationComponent,
+        TechnologiesComponent,
+        FeedbackComponent,
+        BlogComponent,
+        InterestComponent,
+        ContactComponent
     ],
     providers: [],
     bootstrap: [ AppComponent ]

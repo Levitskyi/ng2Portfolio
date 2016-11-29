@@ -1,12 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html class="theme-color-07cb79 theme-skin-light">
 <head>
     <base href="/">
     <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fredoka+One">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
+
 </head>
-<body>
-<app>Loading...</app>
+<body class="home header-has-img">
+<app>
+    <style>
+        #preloader {
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: #fff; }
+        #preloader .preload-text {
+            display: none; }
+        #preloader .preload-icon {
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            padding: 0px;
+            text-align: left;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -35px;
+            margin-top: -35px; }
+        #preloader .preload-icon span {
+            position: absolute;
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            background: #000000;
+            -webkit-animation: preloader 1.6s linear infinite;
+            -moz-animation: preloader 1.6s linear infinite;
+            animation: preloader 1.6s linear infinite; }
+        #preloader .preload-icon span:last-child {
+            -webkit-animation-delay: -0.8s;
+            -moz-animation-delay: -0.8s;
+            animation-delay: -0.8s; }
+
+        @-webkit-keyframes preloader {
+            0% {
+                -webkit-transform: scale(0, 0);
+                opacity: 0.5; }
+            100% {
+                -webkit-transform: scale(1, 1);
+                opacity: 0; } }
+        @-moz-keyframes preloader {
+            0% {
+                -moz-transform: scale(0, 0);
+                opacity: 0.5; }
+            100% {
+                -moz-transform: scale(1, 1);
+                opacity: 0; } }
+        @keyframes preloader {
+            0% {
+                transform: scale(0, 0);
+                opacity: 0.5; }
+            100% {
+                transform: scale(1, 1);
+                opacity: 0; } }
+    </style>
+    <div id="preloader">
+        <div class="preload-icon"><span></span><span></span></div>
+        <div class="preload-text">Loading ...</div>
+    </div>
+</app>
 </body>
 </html>

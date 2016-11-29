@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 node_modules
+template
 jspm_packages
 link-checker-results.txt
 **/*npm-debug.log.*
