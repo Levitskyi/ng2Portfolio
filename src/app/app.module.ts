@@ -21,6 +21,9 @@ import { BlogComponent } from './blog';
 import { InterestComponent } from './interest';
 import { ContactComponent } from './contact';
 
+
+import { HeaderDirective } from './header/header.directive';
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -42,7 +45,8 @@ import { ContactComponent } from './contact';
         FeedbackComponent,
         BlogComponent,
         InterestComponent,
-        ContactComponent
+        ContactComponent,
+        HeaderDirective
     ],
     providers: [],
     bootstrap: [ AppComponent ]
