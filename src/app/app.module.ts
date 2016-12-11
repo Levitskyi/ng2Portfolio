@@ -21,6 +21,7 @@ import { BlogComponent } from './blog';
 import { InterestComponent } from './interest';
 import { ContactComponent } from './contact';
 import { SidebarComponent } from './sidebar';
+import { OverlayComponent } from './overlay';
 
 
 import { HeaderDirective } from './header/header.directive';
@@ -48,7 +49,8 @@ import { HeaderDirective } from './header/header.directive';
         InterestComponent,
         ContactComponent,
         HeaderDirective,
-        SidebarComponent
+        SidebarComponent,
+        OverlayComponent
     ],
     providers: [],
     bootstrap: [ AppComponent ]
