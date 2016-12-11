@@ -8,7 +8,7 @@ import '@angular/router';
 // RxJS
 import 'rxjs';
 // Bootstrap
-import 'bootstrap'
+import 'bootstrap';
 // import 'bootstrap/dist/css/bootstrap.css'
 // import 'bootstrap/dist/css/bootstrap-theme.css'
 // Other vendors for example jQuery, Lodash or Bootstrap

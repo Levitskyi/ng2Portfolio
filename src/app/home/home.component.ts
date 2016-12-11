@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 import 'owl.carousel';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 declare var $:any;
-
 
 @Component({
     selector: 'home',
@@ -13,18 +12,11 @@ declare var $:any;
 export class HomeComponent {
     title: string;
     description: string;
+    showSidebar: boolean = false;
 
-    clearData() {
-        this.description = '';
-        console.log('test');
+
+    toggleSidebar(event:boolean) {
+        this.showSidebar = event;
     }
 
-    ngOnInit() {
-        $('.owl-carousel').owlCarousel();
-    }
-
-    constructor() {
-        this.title = 'Home';
-        this.description = 'Description';
-    }
 }

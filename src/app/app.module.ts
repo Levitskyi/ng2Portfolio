@@ -20,6 +20,7 @@ import { FeedbackComponent } from './feedback';
 import { BlogComponent } from './blog';
 import { InterestComponent } from './interest';
 import { ContactComponent } from './contact';
+import { SidebarComponent } from './sidebar';
 
 
 import { HeaderDirective } from './header/header.directive';
@@ -46,7 +47,8 @@ import { HeaderDirective } from './header/header.directive';
         BlogComponent,
         InterestComponent,
         ContactComponent,
-        HeaderDirective
+        HeaderDirective,
+        SidebarComponent
     ],
     providers: [],
     bootstrap: [ AppComponent ]

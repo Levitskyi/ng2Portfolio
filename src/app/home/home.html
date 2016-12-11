@@ -1,8 +1,12 @@
-<div class="wrapper">
+<div class="wrapper" [class.sidebar-opened]="showSidebar">
 
     <!-- Header -->
-    <app-header></app-header>
+    <app-header (emitOpenSidebar)="toggleSidebar($event)"></app-header>
     <!-- Header -->
+
+    <!-- Sidebar -->
+    <sidebar (emitCloseSidebar)="toggleSidebar($event)"></sidebar>
+    <!-- Sidebar -->
 
     <div class="content">
         <div class="container">
@@ -40,3 +44,5 @@
     </div>
 
 </div>
+
+<div id="overlay"></div>
