@@ -37,6 +37,10 @@ module.exports = {
                 test: /\.css$/,
                 include: helpers.root('src', 'app'),
                 loader: 'raw'
+            },
+            {
+                test: require.resolve('wowjs/dist/wow.js'),
+                loader: 'exports?this.WOW'
             }
         ]
     },
@@ -54,7 +58,8 @@ module.exports = {
             jQuery: 'jquery',
             $: 'jquery',
             jquery: 'jquery',
-            'window.jQuery': 'jquery'
+            'window.jQuery': 'jquery',
+            WOW: 'wowjs'
         })
     ]
 };
